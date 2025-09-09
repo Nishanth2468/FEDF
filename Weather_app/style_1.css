@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 350px;
+    background: #ffffffcc;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+    text-align: center;
+}
+
+main:hover {
+    transform: scale(1.02);
+}
+
+main form {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+main form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+main form button {
+    background: #66a6ff;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+main form button:hover {
+    background: #4a8bff;
+}
+
+.result .name {
+    font-weight: bold;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.temperature img {
+    width: 120px;
+    filter: drop-shadow(0 6px 15px rgba(0,0,0,0.2));
+}
+
+.temperature figcaption {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.description {
+    text-transform: capitalize;
+    color: #444;
+    font-size: 1.1em;
+    margin: 15px 0 25px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+ul li {
+    flex: 1;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    border-radius: 12px;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+ul li:nth-child(2) {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+ul li:nth-child(3) {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+}
+
+ul li i {
+    font-size: 1.4em;
+    margin: 8px 0;
+    display: block;
+}
